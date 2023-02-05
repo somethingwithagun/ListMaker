@@ -1,0 +1,79 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "debug",
+      "command": "D:/programms/MinGWx32/bin/g++.exe",
+      "args": [
+        "-std=c++17",
+        "-mwindows",
+        "-fdiagnostics-color=always",
+        "-g",
+        "${workspaceFolder}\\src\\*.cpp",
+        "-o",
+        "${workspaceFolder}\\build\\debug\\ListMaker.exe",
+        "-I",
+        "${workspaceFolder}\\include",
+        "-I",
+        "D:/libs/wxWidgets-3.2.1-s/include\\wx\\gtk/",
+        "-I",
+        "D:/libs/wxWidgets-3.2.1-s/include\\",
+        "-I",
+        "D:/libs/wxWidgets-3.2.1-s\\lib\\gcc_dll/mswud",
+        "-L",
+        "D:/libs/wxWidgets-3.2.1-s\\lib\\gcc_dll/",
+        "-l",
+        "wxmsw32ud_core",
+        "-l",
+        "wxbase32ud"
+      ],
+      "options": {
+        "cwd": "D:/programms/MinGWx32/bin"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "компилятор: D:/programms/MinGWx32/bin/g++.exe"
+    },
+    {
+      "type": "shell",
+      "label": "release",
+      "command": "D:/programms/MinGWx32/bin/g++.exe",
+      "args": [
+        "-std=c++17",
+        "-mwindows",
+        "-g",
+        "${workspaceFolder}\\src\\*.cpp",
+        "-o",
+        "${workspaceFolder}\\build\\release\\ListMaker.exe",
+        "-I",
+        "${workspaceFolder}\\include",
+        "-I",
+        "D:/libs/wxWidgets-3.2.1-s/include\\wx\\gtk/",
+        "-I",
+        "D:/libs/wxWidgets-3.2.1-s/include\\",
+        "-I",
+        "D:/libs/wxWidgets-3.2.1-s\\lib\\gcc_dll/mswu",
+        "-L",
+        "D:/libs/wxWidgets-3.2.1-s\\lib\\gcc_dll/",
+        "-l",
+        "wxmsw32u_core",
+        "-l",
+        "wxbase32u"
+      ],
+      "options": {
+        "cwd": "D:/programms/MinGWx32/bin"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "компилятор: D:/programms/MinGW/bin/g++.exe"
+    }
+  ]
+}

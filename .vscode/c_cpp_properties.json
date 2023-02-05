@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "Win64",
+      "includePath": [
+        "${default}",
+        "${workspaceFolder}/include",
+        "D:/libs/wxWidgets-3.2.1-s\\include\\",
+        "D:/libs/wxWidgets-3.2.1-s\\lib\\gcc_dll/",
+        "D:/libs/wxWidgets-3.2.1-s\\lib\\gcc_dll/mswud/"
+      ],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "windowsSdkVersion": "10.0.19041.0",
+      "cStandard": "c17",
+      "configurationProvider": "ms-vscode.cmake-tools",
+      "compilerPath": "D:/programms/mingwx32/bin/g++.exe",
+      "intelliSenseMode": "windows-gcc-x86",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
